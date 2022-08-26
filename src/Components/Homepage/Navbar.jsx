@@ -14,7 +14,6 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
-  label,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -22,10 +21,14 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
+import { useContext } from 'react';
+import { Authcontext } from '../../context/Authcontext';
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
+  const {isAuth,haldeLogout}=useContext(Authcontext)
  
+
   return (
     <Box>
       <Flex
@@ -231,12 +234,12 @@ const NAV_ITEMS = [
     
   },
   {
-    label : 'ZMS',
+    label: 'ZMS',
     href: '#',
   },
   {
-  
-     label:[login!==null?login.name:'Login/Signup'],
-    href: 'login',
-  },
+    
+    label:login!==null?login.name:"Login/Signup",
+    href: '/login',
+  }
 ];
