@@ -4,11 +4,11 @@ import { useContext } from 'react'
 import { useEffect } from 'react'
 import {BsEye,BsEyeSlash,BsArrowLeft} from "react-icons/bs"
 import { useNavigate } from 'react-router-dom'
-// import { Authcontext } from '../../context/Authcontext'
+import { Authcontext } from '../../context/Authcontext'
 export const DetailForm = () => {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show) 
-    // const {handleLogin}=useContext(Authcontext)
+    const {handleLogin}=useContext(Authcontext)
     let navigate=useNavigate()
     const [login,setLogin]=useState({
       name:"",
@@ -26,7 +26,7 @@ export const DetailForm = () => {
     const submitdata=(e)=>{
     e.preventDefault()
     setData(login)
-    // handleLogin()
+    handleLogin()
     // navigate('/')
     window.location.href="/"
     }
