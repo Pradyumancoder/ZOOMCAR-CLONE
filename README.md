@@ -10,11 +10,6 @@ vercel link-https://rural-vessel-2538.vercel.app/
 - Chakara UI
 - Html
 
-
-## Gif 
-
-![Alt Text](https://media.giphy.com/media/HiStOYO6y7c3c7WU2j/giphy.gif)
-
 ## Screen Short
 - Home
 ![App Screenshot](https://user-images.githubusercontent.com/91541289/146790574-517f5a2e-d314-4795-9e8d-b28601cec36a.png)
