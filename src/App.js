@@ -13,8 +13,6 @@ import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './Components/Homepage/HomePage';
 import { Card } from './Components/Payment/Card';
 
-
-
 function App() {
   return (
    <div>
